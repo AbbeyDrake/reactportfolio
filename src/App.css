@@ -2,6 +2,28 @@
   text-align: center;
 }
 
+.jumbotron {
+  background-image: url("./assets/mountain.jpg");
+  background-repeat: no-repeat;
+  opacity: 80%;
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  margin: 0;
+  padding-right: 10px;
+  padding-top: 80px;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a, a:hover {
+  color: #E9E9E9;
+  text-decoration: none;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,7 +34,43 @@
     animation: App-logo-float infinite 3s ease-in-out;
   }
 }
+.btn{
+  background-color: #8aa5a7;
+  color: black
+}
 
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  /* min-height: 50vh; */
+}
+/* ul li {
+  display: inline;
+} */
+.box-text{
+  font-size: 2rem;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  
+}
+.body1{
+  min-height: 35rem;
+  padding-top: 2rem;
+  width: 100%;
+ 
+}
+.body2{
+  background-color: rgb(214, 211, 207, .3);
+  min-height: 35rem;
+  padding-top: 2rem;
+  width: 100%;
+ 
+}
 .App-header {
   min-height: 100vh;
   display: flex;
