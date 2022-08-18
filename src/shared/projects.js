@@ -3,7 +3,8 @@ export const PROJECTS = [
         id: 0,
         name: "Annie",
         image: require("../assets/woman.png"),
-        description: "BLAH BLAH BLAH"
+        description: "BLAH BLAH BLAH",
+        video: require("../assets/PCvideo.mov")
     },
     {
         id: 1,

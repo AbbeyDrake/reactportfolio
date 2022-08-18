@@ -5,7 +5,7 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, La
 const PortfolioCard = ({project}, args) => {
     const [modal, setModal] = useState(false);
     const toggleModal = () => setModal(!modal);
-    const {image, name, description } = project;
+    const {image, name, description, video } = project;
     return (
         <div>
         <Card onClick = {toggleModal} style = {{width: "9rem"}}>
@@ -21,9 +21,11 @@ const PortfolioCard = ({project}, args) => {
         <Modal isOpen={modal} toggleModal={toggleModal} {...args}>
          <ModalHeader>{name}</ModalHeader>               
         <ModalBody>
-        {description}
+        
+        <video src={video} autoplay controls width="250"></video>
         </ModalBody>
-        <ModalFooter>
+        <ModalFooter className='m-3'>
+        {description}
         <Button color="secondary" onClick={toggleModal}>
             X
         </Button>
