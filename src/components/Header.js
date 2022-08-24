@@ -24,9 +24,7 @@ const Header = () => {
                     </div>
                     <div class="row">
                         <div class="col text-center text-sm-end offset-sm-5">
-                            <p class="lead">I'm Abbey, a full-stack developer based in Denver with a passion for merging beauty
-                                and function.</p>
-
+                            <p class="lead">I'm Abbey, a full-stack developer based in Denver with a passion for merging beautyand function.</p>
                         </div>
                     </div>
                     <div class="row">
@@ -35,32 +33,26 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-        </div>
-        {/* <div class="container-fluid bg-light text-dark p-5">
-            <div class="container bg-light p-5">
-                <h1 class="display-1 fw-bold">Welcome to Admin Dashboard</h1>
-                
-                <p>Go to My Website</p>
-
             </div>
-        </div> */}
-        <Navbar style={{backgroundColor: '#8aa5a7'}} sticky='top' expand='md'>
-
-            <NavbarToggler onClick={()=> setMenuOpen(!menuOpen)}/>
-            <Collapse isOpen={menuOpen} navbar>
-                <Nav className='ms-3' navbar>
-                    <NavItem style={{color: '#E9E9E9', textDecoration: 'none'}}>
-                      <a href='#about' class="m-2" >About</a>
-                    </NavItem>
-                    <NavItem>
-                      <a href='#portfolio' class='m-2'>Portfolio</a>
-                    </NavItem>
-                </Nav>
-            </Collapse>
-            
-        </Navbar>
         
-    </div>
+            <Navbar fixed="top" sticky='top' expand='md' style={{backgroundColor: '#8aa5a7', height: '14vh'}} dark>
+                <NavbarToggler onClick={()=> setMenuOpen(!menuOpen)}/>
+                <Collapse isOpen={menuOpen} navbar>
+                    <Nav className='ms-3' navbar>
+                        <NavItem style={{color: '#E9E9E9', textDecoration: 'none'}}>
+                        <a href='#about' class="m-1" >About</a>
+                        </NavItem>
+                        <NavItem>
+                        <a href='#portfolio' class='m-1'>Portfolio</a>
+                        </NavItem>
+                        <NavItem>
+                        <a href='#contact' class='m-1'>Contact</a>
+                        </NavItem>
+                    </Nav>
+                </Collapse>
+            </Navbar>
+       
+        </div>
        
     )
 }

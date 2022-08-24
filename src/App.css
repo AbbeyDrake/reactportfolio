@@ -14,14 +14,18 @@
   padding-top: 80px;
 
 }
+.mynavbar {
+  position: sticky;
+  top: 0;
+}
 
 html {
   scroll-behavior: smooth;
 }
 
 a, a:hover {
-  color: #E9E9E9;
-  text-decoration: none;
+  color: #E9E9E9 !important;
+  text-decoration: none !important;
 }
 
 .App-logo {
@@ -47,9 +51,10 @@ a, a:hover {
   padding: 2rem;
   /* min-height: 50vh; */
 }
-/* ul li {
+ul li {
   display: inline;
-} */
+  padding: 1rem;
+}
 .box-text{
   font-size: 2rem;
   color: black;
